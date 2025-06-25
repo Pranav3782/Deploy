@@ -1,8 +1,8 @@
-Flask==2.3.2 # Or a version you prefer, ensure compatibility
+Flask==2.3.2
 Flask-Cors==4.0.0
 python-dotenv==1.0.0
-langchain==0.1.0 # Or the specific version you are using
-langchain-core==0.1.0 # Or the specific version you are using
-langchain-groq==0.1.0 # Or the specific version you are using
-bs4==0.0.1
+langchain==0.1.17 # Updated to a more recent version for better compatibility
+langchain-core==0.1.20 # Updated to be compatible with langchain 0.1.17
+langchain-groq==0.1.0
+beautifulsoup4==4.12.3 # Changed from bs4 to the actual package
 requests==2.31.0
