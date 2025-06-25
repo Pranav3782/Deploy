@@ -1,8 +1,8 @@
 Flask==2.3.2
 Flask-Cors==4.0.0
 python-dotenv==1.0.0
-langchain==0.2.5 # Updated to a more recent stable version
-langchain-core==0.2.14 # Updated to be compatible with langchain 0.2.5
-langchain-groq==0.1.5 # Updated to a more recent compatible version
+langchain==0.2.5
+langchain-core==0.2.13 # Changed from 0.2.14 to 0.2.13
+langchain-groq==0.1.5
 beautifulsoup4==4.12.3
 requests==2.31.0
