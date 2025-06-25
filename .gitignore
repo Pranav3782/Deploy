@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/ # If you use Jupyter notebooks
+venv/ # If you create a virtual environment named 'venv'
+.vscode/ # If you use VS Code and want to ignore IDE-specific settings
+.DS_Store # Mac-specific files
+npm-debug.log* # If you use npm for any reason

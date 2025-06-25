@@ -1,0 +1,8 @@
+Flask==2.3.2 # Or a version you prefer, ensure compatibility
+Flask-Cors==4.0.0
+python-dotenv==1.0.0
+langchain==0.1.0 # Or the specific version you are using
+langchain-core==0.1.0 # Or the specific version you are using
+langchain-groq==0.1.0 # Or the specific version you are using
+bs4==0.0.1
+requests==2.31.0
