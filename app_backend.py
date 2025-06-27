@@ -14,6 +14,15 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app) # Enable CORS for all origins, or specify origins if needed (e.g., CORS(app, origins=["http://127.0.0.1:5500"]))
 
+app.debug = False # Force debug mode off for production environments, prevents Flask's dev server from running
+
+# --- Debugging: Verify app.debug value at runtime ---
+print(f"DEBUG: app.debug is set to: {app.debug}")
+
+# Allow requests from your Netlify frontend URL. For local testing, you can use "*"
+# For production, replace "https://your-netlify-frontend-url.netlify.app" with your actual Netlify URL
+CORS(app, resources={r"/*": {"origins": "*"}}) # Allow all origins for simplicity in development
+
 # --- API Endpoints ---
 
 @app.route('/analyze', methods=['POST'])
