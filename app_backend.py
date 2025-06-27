@@ -12,7 +12,7 @@ from chains import get_restaurant_analysis_chain, get_chatbot_response, extract_
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app) # Enable CORS for all origins, or specify origins if needed (e.g., CORS(app, origins=["http://127.0.0.1:5500"]))
+ # Enable CORS for all origins, or specify origins if needed (e.g., CORS(app, origins=["http://127.0.0.1:5500"]))
 
 app.debug = False # Force debug mode off for production environments, prevents Flask's dev server from running
 
