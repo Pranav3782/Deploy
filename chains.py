@@ -14,7 +14,7 @@ from prompts import (
 load_dotenv()
 
 # --- Debugging: Print the loaded API keys to check if they're being read ---
-print(f"DEBUG: GROQ_API_KEY loaded: {os.getenv('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') is not None}") # Corrected
+print(f"DEBUG: GROQ_API_KEY loaded: {os.getenv('GROQ_API_KEY') is not None}") # Corrected
 print(f"DEBUG: GROQ_API_KEY value (first 5 chars): {os.getenv('GROQ_API_KEY')[:5] if os.getenv('GROQ_API_KEY') else 'None'}") # Corrected
 
 
@@ -22,7 +22,7 @@ print(f"DEBUG: GROQ_API_KEY value (first 5 chars): {os.getenv('GROQ_API_KEY')[:5
 llm = ChatGroq(
     temperature=0.7,
     model_name="llama-3.3-70b-versatile", # Changed model name to a commonly available one
-    groq_api_key=os.getenv("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") # Corrected: Accessing by environment variable name
+    groq_api_key=os.getenv("GROQ_API_KEY") # Corrected: Accessing by environment variable name
 )
 
 # --- LangChain Orchestration ---
