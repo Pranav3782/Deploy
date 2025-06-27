@@ -83,8 +83,8 @@ def chatbot_query():
         print(f"Error in /chatbot: {e}")
         return jsonify({"error": str(e)}), 500
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     # Ensure your GROQ_API_KEY is set in your .env file
     # For development, you can run this Flask app: python app_backend.py
     # For production, use a production WSGI server like Gunicorn
-    app.run(debug=True, port=5000) # Run on port 5000
+   # app.run(debug=True, port=5000) # Run on port 5000
